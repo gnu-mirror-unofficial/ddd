@@ -49,7 +49,16 @@
 
 <UL>
 <LI>
-<STRONG>DDD 3.3 is now <A HREF="#Getting">available</A>.</STRONG>.
+<STRONG>DDD 3.3.7 is now <A HREF="#Getting">available</A>.</STRONG>.
+DDD 3.3.7 brings debugging of bash scripts (together with bashdb) and
+improved conformity with ISO C++: in particular, G++-3.x is now the
+compiler recommended for DDD.
+
+<LI>
+Andreas Zeller has handed maintainership of DDD to Andrew Gaylard.
+
+<LI>
+DDD 3.3 is now <A HREF="#Getting">available</A>.
 DDD 3.3 brings
 <A HREF="http://ftp.gnu.org/pub/gnu/ddd/NEWS">data themes, 
 debugger interaction while the program is running,
@@ -82,49 +91,35 @@ are displayed as graphs.
 <A HREF="signal.jpg"><IMG WIDTH=121 HEIGHT=127 SRC="small-signal.jpg" ALT="Signals"></A>
 
 <P>
-For more information (and more screenshots), see the <A
-HREF="/manual/ddd/">DDD Manual</A>.
+For more information (and more screenshots), see the
+<A HREF="/manual/ddd/">DDD Manual</A>.
 
 
 <H2><A NAME="Getting" HREF="">Where do I get DDD source?</A></H2>
 
 DDD is in the subdirectory 
-<SAMP><A HREF="http://ftp.gnu.org/gnu/ddd/">/gnu/ddd/</A></SAMP> on 
-<SAMP><A HREF="http://ftp.gnu.org">ftp.gnu.org</A></SAMP>. 
+<SAMP><A HREF="http://ftp.gnu.org/gnu/ddd/">/gnu/ddd/</A></SAMP> on
+<SAMP><A HREF="http://ftp.gnu.org">ftp.gnu.org</A></SAMP>.
 
-You can also download GNU DDD from <A
-HREF="/order/ftp.html">any GNU FTP server near you</A> or <A
-HREF="/order/order.html">buy copies on CD-ROM</A> from the <A
-HREF="/fsf/fsf.html">FSF</A>.
+You can also download GNU DDD from
+<A HREF="/order/ftp.html">any GNU FTP server near you</A> or
+<A HREF="/order/order.html">buy copies on CD-ROM</A> from the
+<A HREF="/fsf/fsf.html">FSF</A>.
 
-The <SAMP>ddd/</SAMP> directory contains three different packages:
+The <SAMP>ddd/</SAMP> directory contains the <EM>DDD source distribution:</EM>:
 <DL>
-<DT>The <EM>DDD source distribution:</EM>
-<SAMP>ddd-<VAR>version</VAR>.tar.gz</SAMP></DT>
+<DT> <SAMP>ddd-<VAR>version</VAR>.tar.gz</SAMP>
+-- this package is the one you want.  It includes
+</DT>
 <DD>
-This package is the one you want.  It includes
 <UL>
-<LI> the complete DDD source code, 
-<LI> building instructions, as well as 
+<LI> the complete DDD source code,
+<LI> building instructions, as well as
 <LI> the DDD manual in TeXinfo, Info, PostScript, and PDF formats.
 </UL>
 </DD>
 <P>
 
-<DT>The <EM>DDD manual in HTML format:</EM>
-<SAMP>ddd-<VAR>version</VAR>-html-manual.tar.gz</SAMP></DT>
-<DD>
-You need this if you want a local copy
-of the DDD manual at your site.
-</DD>
-<P>
-
-<DT>The <EM>DDD screenshot sources:</EM>
-<SAMP>ddd-<VAR>version</VAR>-pics.tar.gz</SAMP></DT>
-<DD>
-You need this only if you want to rebuild the DDD manual after some
-change.
-</DD>
 </DL>
 
 <A HREF="/software/software.html">Here</A> are further <A
@@ -162,7 +157,7 @@ To build DDD from sources, you need
 <LI> The <A HREF="#Getting">DDD source distribution</A> (see above).
 
 <LI> The <A HREF="/software/gcc/gcc.html">GNU compiler collection
-(GCC)</A>, version 2.7.2 or higher (or another C++ compiler).
+(GCC)</A>, version 3.0 or higher (or another ISO C++ compiler).
 
 <LI> The <A HREF="http://www.lesstif.org/">LessTif</A> user interface
 toolkit, version 0.89 or higher (or another Motif-compatible user
@@ -383,7 +378,7 @@ permitted in any medium, provided this notice is preserved.
 <P>
 Updated:
 <!-- timestamp start -->
-$Date: 2002/08/22 21:27:14 $ $Author: bkuhn $
+$Date: 2003/09/01 17:41:28 $ $Author: apgaylard $
 <!-- timestamp end -->
 <HR>
 </BODY>
