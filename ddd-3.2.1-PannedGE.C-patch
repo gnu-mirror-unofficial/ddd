@@ -1,0 +1,56 @@
+Index: PannedGE.C
+===================================================================
+RCS file: /cvsroot/ddd/ddd/ddd/PannedGE.C,v
+retrieving revision 1.17
+diff -c -2 -r1.17 PannedGE.C
+*** PannedGE.C	1999/08/19 11:27:45	1.17
+--- PannedGE.C	2000/11/30 09:23:15
+***************
+*** 86,90 ****
+  // Class record initialization
+  
+! PannedGraphEditClassRec pannedGraphEditClassRec = {
+    {	 /* core fields */
+      /* superclass               */  portholeWidgetClass,
+--- 86,97 ----
+  // Class record initialization
+  
+! // Use `struct _PannedGraphEditClassRec' here instead of 
+! // the more appropriate `PannedGraphEditClassRec' due to a bug in GCC 2.96.
+! // GCC 2.96 message is:
+! // PannedGE.C: In function `void __static_initialization_and_destruction_0
+! // (int, int)':
+! // PannedGE.C:88: non-lvalue in unary `&'
+! 
+! struct _PannedGraphEditClassRec pannedGraphEditClassRec = {
+    {	 /* core fields */
+      /* superclass               */  portholeWidgetClass,
+Index: PannedGEP.h
+===================================================================
+RCS file: /cvsroot/ddd/ddd/ddd/PannedGEP.h,v
+retrieving revision 1.10
+retrieving revision 1.11
+diff -c -2 -r1.10 -r1.11
+*** PannedGEP.h	1999/08/19 11:27:45	1.10
+--- PannedGEP.h	2000/11/22 11:40:24	1.11
+***************
+*** 3,6 ****
+--- 3,7 ----
+  
+  // Copyright (C) 1995 Technische Universitaet Braunschweig, Germany.
++ // Copyright (C) 2000 Universitaet Passau, Germany.
+  // Written by Andreas Zeller <zeller@gnu.org>.
+  // 
+***************
+*** 55,59 ****
+  } PannedGraphEditClassPart;
+  
+! typedef struct _GraphEditClassRec {
+      CoreClassPart              core_class;
+      CompositeClassPart         composite_class;
+--- 56,60 ----
+  } PannedGraphEditClassPart;
+  
+! typedef struct _PannedGraphEditClassRec {
+      CoreClassPart              core_class;
+      CompositeClassPart         composite_class;
