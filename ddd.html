@@ -48,29 +48,26 @@
 <H2><A NAME="News" HREF="">DDD News</A></H2>
 
 <UL>
-<LI>
-DDD 3.3.7 is currently <STRONG>not</STRONG> on ftp.gnu.org, after the server
-was <A HREF="http://ftp.gnu.org/MISSING-FILES.README">cracked</A> recently.
-In the meantime, you can get the source from
-<A HREF="http://www.sf.net/projects/ddd">SourceForge</A>.  The GNU system admin
-people are working hard to verify the integrity of any affected files, and DDD
-3.3.7 will be put back when they have completed the job.  Thanks guys!
 
 <LI>
-<STRONG>DDD 3.3.7 is now <A HREF="#Getting">available</A>.</STRONG>.
+<STRONG>(2003/11/10) DDD 3.3.8 is now <A HREF="#Getting">available</A>.</STRONG>
+DDD 3.3.8 contains some important memory corruption fixes, and better
+interoperation with gdb-5.x, gdb-6.0, and the Perl debugger.  In
+addition, Arnaud Desitter has made literally hundreds of
+micro-optimisations throughout the codebase.  Builds on HPUX-10.20 and
+NetBSD are improved too.  The manual is now distributed in PS, PDF, and
+texinfo sources in the main distribution tarball (previously, it was a
+separate bundle).  DDD 3.3.8 is the fastest and most stable DDD yet --
+I strongly recommend upgrading if you are using an earlier version.
+
+<LI>
+DDD 3.3.7 is now <A HREF="#Getting">available</A>.
 DDD 3.3.7 brings debugging of bash scripts (together with bashdb) and
 improved conformity with ISO C++: in particular, G++-3.x is now the
 compiler recommended for DDD.
 
 <LI>
 Andreas Zeller has handed maintainership of DDD to Andrew Gaylard.
-
-<LI>
-DDD 3.3 is now <A HREF="#Getting">available</A>.
-DDD 3.3 brings
-<A HREF="http://ftp.gnu.org/pub/gnu/ddd/NEWS">data themes, 
-debugger interaction while the program is running,
-support for JDB 1.2, and several bug fixes</A>.
 
 <LI>
 There's an <A
@@ -105,16 +102,19 @@ For more information (and more screenshots), see the
 
 <H2><A NAME="Getting" HREF="">Where do I get DDD source?</A></H2>
 
-DDD is in the subdirectory 
+DDD can be found at
 <SAMP><A HREF="http://ftp.gnu.org/gnu/ddd/">/gnu/ddd/</A></SAMP> on
 <SAMP><A HREF="http://ftp.gnu.org">ftp.gnu.org</A></SAMP>.
+
+DDD can also be found at
+<A HREF="http://sf.net/projects/ddd">SourceForge</A>.
 
 You can also download GNU DDD from
 <A HREF="/order/ftp.html">any GNU FTP server near you</A> or
 <A HREF="/order/order.html">buy copies on CD-ROM</A> from the
 <A HREF="/fsf/fsf.html">FSF</A>.
 
-The <SAMP>ddd/</SAMP> directory contains the <EM>DDD source distribution:</EM>:
+The <SAMP>ddd/</SAMP> directory contains the <EM>DDD source distribution:</EM>
 <DL>
 <DT> <SAMP>ddd-<VAR>version</VAR>.tar.gz</SAMP>
 -- this package is the one you want.  It includes
@@ -289,7 +289,7 @@ Here's a couple of related resources:
 <SMALL>Several links to integrated development environments.</SMALL>
 -- sinuhe 7 Oct 2003 -->
 
-<LI> <CITE><A HREF="http://www.cygnus.com/gdb/">GDB Home Page</A></CITE>.
+<LI> <CITE><A HREF="http://sources.redhat.com/gdb/">GDB Home Page</A></CITE>.
 <SMALL>Includes latest patches and development snapshots.</SMALL>
 <LI> <CITE><A
 HREF="http://www.lesstif.org/">LessTif</A></CITE>.
@@ -299,8 +299,8 @@ HREF="http://www.lesstif.org/">LessTif</A></CITE>.
 <SMALL>An enhanced GDB port - HP's new strategic
           source-level debugger.</SMALL>
 <LI> <CITE><A
-HREF="http://sourceware.cygnus.com/insight/">Insight</A></CITE>.  <SMALL>A
-very nice GUI for GDB from <A HREF="http://www.cygnus.com/">Cygnus</A>, 
+HREF="http://sources.redhat.com/insight/">Insight</A></CITE>.  <SMALL>A
+very nice GUI for GDB from <A HREF="http://www.redhat.com/">Redhat</A>,
 the GDB maintainers.</SMALL>
 <LI> <CITE><A
 HREF="http://members.telecom.at/~johsixt/kdbg.html">KDbg</A></CITE>.  <SMALL>A
@@ -328,7 +328,7 @@ of available Perl debuggers</A></CITE>.  <SMALL>The ultimate Perl reference.</SM
 HREF="http://members.tripod.com/~CurtMcKelvey/perldbgui/">A GUI for
 the Perl Debugger</A></CITE>. <SMALL>Written in Perl.</SMALL>
 <LI> <CITE><A
-HREF="http://wattle.cs.ntu.edu.au/homepages/pjm/nana-home/">GNU 
+HREF="software/nana/nana.html">GNU 
 Nana</A></CITE>.
 <SMALL>Improved support for assertions and logging in C and
           C++.</SMALL>
@@ -346,7 +346,7 @@ HREF="/software/checker/checker.html">GNU Checker</A></CITE>.
 HREF="http://www.ee.ryerson.ca:8080/~elf/xapps/Q-IV.html">xwpe</A></CITE>.
 <SMALL>A programming environment integrating a program editor with an
 external debugger.</SMALL>
-<LI> <CITE><A HREF="http://www.cs.nmsu.edu/~mikau/aadebug.html">Algorithmic 
+<LI> <CITE><A HREF="http://www.cs.nmsu.edu/~jeffery/aadebug.html">Algorithmic 
 and Automatic Debugging</A></CITE>. <SMALL>A survey on 
 current debugging research.</SMALL>
 <LI> <CITE><A HREF="http://www.ptools.org/hpdf/">High Performance Debugging
@@ -389,7 +389,7 @@ permitted in any medium, provided this notice is preserved.
 <P>
 Updated:
 <!-- timestamp start -->
-$Date: 2003/11/07 20:39:17 $ $Author: sinuhe $
+$Date: 2003/11/12 19:00:47 $ $Author: apgaylard $
 <!-- timestamp end -->
 <HR>
 </BODY>
