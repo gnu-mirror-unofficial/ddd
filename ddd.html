@@ -59,37 +59,39 @@
 <UL>
 
 <LI>
-<STRONG>(2004/06/24) DDD 3.3.9 is now <A HREF="#Getting">available</A>.</STRONG>
-DDD-3.3.9 brings support for PHP; this is largely untested, so
-feedback is most welcome.  Locating source files when
-using dbx now works automatically.  The perl version supported by
-DDD is now 5.8.x; unfortunately there remain a few wrinkles, but we're working
-on them.   The debugger settings window now starts at a larger, more reasonable
-size, and allows the user to resize it.  Several minor bugs have been fixed,
-memory leaks plugged, code cleaned up, etc.  And lastly, builds on many
-platforms have been improved, both with G++ 3.x and with various vendor
-compilers.  If you've had problems building DDD on your platform (HPUX, Cygwin,
-Tru64, Solaris, Irix, AIX), then this is the DDD version that's for you!
+<STRONG>(2004/06/24) DDD 3.3.9 is now <A HREF="#Getting">available</A>.
+</STRONG> DDD-3.3.9 brings support for PHP; this is largely untested, so
+feedback is most welcome.  Locating source files when using dbx now works
+automatically.  The perl version supported by DDD is now 5.8.x; unfortunately
+there remain a few wrinkles, but we're working on them.   The debugger settings
+window now starts at a larger, more reasonable size, and allows the user to
+resize it.  Several minor bugs have been fixed, memory leaks plugged, code
+cleaned up, etc.  And lastly, builds on many platforms have been improved, both
+with G++ 3.x and with various vendor compilers.  If you've had problems
+building DDD on your platform (HPUX, Cygwin, Tru64, Solaris, Irix, AIX), then
+this is the DDD version that's for you!
 
 <LI>
-(2003/11/10) DDD 3.3.8 is now <A HREF="#Getting">available</A>.
-DDD 3.3.8 contains some important memory corruption fixes, and better
-interoperation with gdb-5.x, gdb-6.0, and the Perl debugger.  In
-addition, Arnaud Desitter has made literally hundreds of
-micro-optimisations throughout the codebase.  Builds on HPUX-10.20 and
-NetBSD are improved too.  The manual is now distributed in PS, PDF, and
-texinfo sources in the main distribution tarball (previously, it was a
-separate bundle).  DDD 3.3.8 is the fastest and most stable DDD yet --
-I strongly recommend upgrading if you are using an earlier version.
+<STRONG>(2003/11/10) DDD 3.3.8 is now <A HREF="#Getting">available</A>.
+</STRONG> DDD 3.3.8 contains some important memory corruption fixes, and better
+interoperation with gdb-5.x, gdb-6.0, and the Perl debugger.  In addition,
+Arnaud Desitter has made literally hundreds of micro-optimisations throughout
+the codebase.  Builds on HPUX-10.20 and NetBSD are improved too.  The manual is
+now distributed in PS, PDF, and texinfo sources in the main distribution
+tarball (previously, it was a separate bundle).  DDD 3.3.8 is the fastest and
+most stable DDD yet -- I strongly recommend upgrading if you are using an
+earlier version.
 
 <LI>
-DDD 3.3.7 is now <A HREF="#Getting">available</A>.
-DDD 3.3.7 brings debugging of bash scripts (together with bashdb) and
-improved conformity with ISO C++: in particular, G++-3.x is now the
-compiler recommended for DDD.
+<STRONG>(2003/07/31) DDD 3.3.7 is now <A HREF="#Getting">available</A>.
+</STRONG> DDD 3.3.7 brings debugging of bash scripts (together with bashdb) and
+improved conformity with ISO C++: in particular, G++-3.x is now the compiler
+recommended for DDD. G++-2.x versions will definitely not work, and will no
+longer be supported.
 
 <LI>
-Andreas Zeller has handed maintainership of DDD to Andrew Gaylard.
+<STRONG>(2003/05/15) Andreas Zeller has handed maintainership of DDD to Andrew
+Gaylard.</STRONG>
 
 </UL>
 
@@ -292,18 +294,6 @@ HREF="http://www.gnu.org/help/gethelp.html">ask for technical support</A>.
 Here's a couple of related resources:
 
 <UL>
-<!-- broken as of 12 October 2001  ==brett
- LI   CITE  A HREF="http://www.cs.tu-bs.de/softech/ddd/ddd.html" Old DDD
- Home Page /A  /CITE .
- SMALL Lots of information on earlier DDD versions.  No longer
- maintained. /SMALL
--->
-<!-- This link is broken and redirectes to an undesirable page
-<LI> <CITE><A
- HREF="http://members.home.net:80/davecook/devel/">Linux
- Development Software</A></CITE>.
-<SMALL>Several links to integrated development environments.</SMALL>
-== sinuhe 7 Oct 2003 -->
 
 <LI> <CITE><A HREF="/software/gdb/gdb.html">GDB Home Page</A></CITE>.
 <SMALL>Includes latest patches and development snapshots.</SMALL>
@@ -311,9 +301,8 @@ Here's a couple of related resources:
 HREF="http://www.lesstif.org/">LessTif</A></CITE>.
 <SMALL>The free Motif clone.</SMALL>
 <LI> <CITE><A HREF="http://libre.act-europe.fr/gvd/">GVD</A></CITE>.  <SMALL>The GNU Visual Debugger.</SMALL> 
-<LI> <CITE><A HREF="http://www.hp.com/lang/tools/Debuggers/WDB/">HP Wildebeest (WDB)</A></CITE>.
-<SMALL>An enhanced GDB port - HP's new strategic
-          source-level debugger.</SMALL>
+<LI> <CITE><A HREF="http://www.hp.com/go/wdb">HP Wildebeest (WDB)</A></CITE>.
+<SMALL>A port of GDB to PA-RISC/HP-UX, by HP.</SMALL>
 <LI> <CITE><A
 HREF="http://sources.redhat.com/insight/">Insight</A></CITE>.  <SMALL>A
 very nice GUI for GDB from <A HREF="http://www.redhat.com/">Redhat</A>,
@@ -377,6 +366,10 @@ Have fun with DDD!
 <A HREF="http://www.st.cs.uni-sb.de/~zeller/">Andreas Zeller</A>
 &lt;<A HREF="mailto:zeller@gnu.org">zeller@gnu.org</A>&gt;
 
+<P>
+
+Andrew Gaylard &lt;apg at users dot sf dot net&gt;
+
 <!-- beginning of final boilerplate -->
 
 <HR>
@@ -405,7 +398,7 @@ permitted in any medium, provided this notice is preserved.
 <P>
 Updated:
 <!-- timestamp start -->
-$Date: 2004/06/24 19:40:29 $ $Author: apgaylard $
+$Date: 2004/06/25 17:47:26 $ $Author: apgaylard $
 <!-- timestamp end -->
 <HR>
 </BODY>
