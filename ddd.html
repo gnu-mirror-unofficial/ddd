@@ -58,6 +58,35 @@
 
 <UL>
 <LI>
+<STRONG>(2008/03/03) Seeking a new maintainer
+</STRONG>.
+We are officially looking for a new person to take over as maintainer of DDD.
+When I (Andrew) began doing it back in 2003, my day-job permitted me to spend a
+percentage of time on it.  That's no longer the case.  As you can see, it's
+been over two years since the last release, and I'm worried that DDD is
+suffering from this lack of attention.  So if you feel you are sufficiently (a)
+dedicated and (b) qualified to take over as maintainer, please let me know.
+Two possible projects might be of interest:
+	<UL>
+	<LI>
+	Add in functionality to display C++ standard containers (std::vector,
+	std::map, <i>et al</i>.  This is likely to require work on gdb too.
+	<LI>
+	Move the DDD codebase to a modern widget-set.  Motif is quite
+	labour-intensive, which makes it very hard to fix bugs and add new
+	features.  The fact that it's C-based means is isn't a good fit when
+	the rest of the code-base is C++.  It also doesn't match modern desktop
+	environments.  Using a modern toolkit such at gtkmm or Qt would be a
+	great improvement to DDD.  The work involved in this transition is not
+	to be underestimated.  DDD is a rich GUI app, and there is no clean
+	separation of logic between the UI and the rest of the code.
+	</UL>
+And of course, there's the usual stream (trickle, actually) of bug fixes to
+deal with.  I estimate that you'll need to spend about 3 hours per week on
+bug-fixing and answering queries on the mailing list.  That'll increase if you
+take on one of the challenges above (or one of your own, of course).
+
+<LI>
 <STRONG>(2005/10/16) The DDD mailing list is now for subscribers only
 </STRONG>. 
 Since I took over from Andreas as the maintainer of DDD,
@@ -399,7 +428,7 @@ permitted in any medium, provided this notice is preserved.
 <P>
 Updated:
 <!-- timestamp start -->
-$Date: 2006/11/21 07:16:28 $ $Author: ramprasadb $
+$Date: 2008/03/09 19:00:25 $ $Author: apgaylard $
 <!-- timestamp end -->
 <HR>
 </BODY>
