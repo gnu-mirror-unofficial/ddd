@@ -1,13 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<HTML>
-<HEAD>
-<TITLE>DDD - Data Display Debugger - GNU Project - Free Software Foundation (FSF)</TITLE>
-<LINK REL="author" HREF="mailto:zeller at gnu.org">
-<LINK REL="StyleSheet" HREF="style.css" type="text/css" media="screen">
+<html><head>
+
+<title>DDD - Data Display Debugger - GNU Project - Free Software Foundation (FSF)</title><link rel="author" href="mailto:zeller%20at%20gnu.org">
+<link rel="StyleSheet" href="style.css" type="text/css" media="screen">
 
 <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
-<META NAME="keywords" CONTENT="debugger debugging visualization GDB">
-<META NAME="keywords" CONTENT="DDD"><style type="text/css">
+<meta name="keywords" content="debugger debugging visualization GDB">
+<meta name="keywords" content="DDD"><style type="text/css">
  body {
   background-color: #FFFFFF;
   color: #000000;
@@ -15,58 +14,75 @@
  :link { color: #1F00FF }
  :visited { color: #9900DD }
  :active { color: #FF0000 }
-</style>
-</HEAD>
-<BODY>
+</style></head>
 
-<SMALL>
-<A HREF="/home.html">GNU Project</A> - 
-<A HREF="/software/software.html">Software</A>
-</SMALL>
+<body>
 
-<HR>
+<small>
+<a href="/home.html">GNU Project</a> - 
+<a href="/software/software.html">Software</a>
+</small>
 
-<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" summary="index">
-<TR><TD>
-<IMG SRC="/graphics/dddlogo.jpg" ALT="DDD - the Data Display Debugger" WIDTH="410" HEIGHT="140"><BR>
-</TD>
-<TD VALIGN="middle">
+<hr>
 
-<UL>
-<LI> <SMALL CLASS="menu"><A HREF="#News">DDD News</A></SMALL>
-<LI> <SMALL CLASS="menu"><A HREF="#About">About DDD</A></SMALL>
-<LI> <SMALL CLASS="menu"><A HREF="#Getting">Getting DDD</A></SMALL>
-<LI> <SMALL CLASS="menu"><A HREF="#Building">Building DDD</A></SMALL>
-<LI> <SMALL CLASS="menu"><A HREF="#Doc">Documentation</A></SMALL>
-<LI> <SMALL CLASS="menu"><A HREF="#Alpha">Alpha Releases</A></SMALL>
-<LI> <SMALL CLASS="menu"><A HREF="#Bugs">Reporting Bugs</A></SMALL>
-<LI> <SMALL CLASS="menu"><A HREF="#Assistance">Help and Assistance</A></SMALL>
-<LI> <SMALL CLASS="menu"><A HREF="#References">References</A></SMALL>
-</UL>
-</TD></TR></TABLE>
+<table summary="index" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr><td>
+<img src="/graphics/dddlogo.jpg" alt="DDD - the Data Display Debugger" height="140" width="410"><br>
+</td>
+<td valign="middle">
 
-<HR>
+<ul>
+<li> <small class="menu"><a href="#News">DDD News</a></small>
+</li><li> <small class="menu"><a href="#About">About DDD</a></small>
+</li><li> <small class="menu"><a href="#Getting">Getting DDD</a></small>
+</li><li> <small class="menu"><a href="#Building">Building DDD</a></small>
+</li><li> <small class="menu"><a href="#Doc">Documentation</a></small>
+</li><li> <small class="menu"><a href="#Alpha">Alpha Releases</a></small>
+</li><li> <small class="menu"><a href="#Bugs">Reporting Bugs</a></small>
+</li><li> <small class="menu"><a href="#Assistance">Help and Assistance</a></small>
+</li><li> <small class="menu"><a href="#References">References</a></small>
+</li></ul>
+</td></tr></tbody></table>
+
+<hr>
 
 
 <!-- end of beginning boilerplate -->
 
 <!-- Contributing author: Andreas Zeller, zeller at gnu.org -->
 
-<H2><A NAME="News">DDD News</A></H2>
+<h2><a name="News">DDD News</a></h2>
 
-<UL>
-<LI><STRONG>(2008/05/06) New plans for DDD.
-</STRONG>The new maintainer has communicated to the official DDD distribution list about the intention of change the GUI to a <A href="http://trolltech.com/products/qt/" name="Qt">Qt</A> based interface. At the end, it seems that what is going to happens is that DDD will have two branches, one with a GUI based in Qt and other based in Gtkmm, with a common core that will be independent of the GUI. So, it will be possible putting any other GUI based in any other library. As you know <A href="http://trolltech.com/company/newsroom/announcements/press.2008-01-18.5377846280" name="Qt is GPL v3">Qt is GPL v3</A> licensed. 
+<ul>
+<li><span style="font-weight: bold;">(2008/06/10) Lastest changes. </span>To avoid problems in the future I have put everything together. What does it means.&nbsp;</li><ul><li>From
+now on, it doesnt exists several repositories. All information about
+DDD is in this page and in savannah site. There is not other repository
+in all around de world. If you find a repository in SourceForge, ignore
+it because it isnt going to be upgrade any longer. At least not in the
+official version. Since we have been using CVS and SVN for source, I
+have put everything in SVN module. However, web repository is still in
+CVS. So, source in SVN and Web in CVS. For more details to how access
+it please visit savannah web page for intructions.&nbsp;</li><li>To
+report bugs you should use the bug track system in savannah as well.
+All other emails to the generic distribution list with errors will be
+ignored. Please, subscribe to DDD distribution list in order to be up
+to date with all about this project.&nbsp;</li><li>This web page will change in some days to make it more clear and useful.</li></ul></ul><ul><li><strong>(2008/05/06) New plans for DDD.
+</strong>The ne problemw maintainer has communicated to the official DDD distribution list about the intention of change the GUI to a <a href="http://trolltech.com/products/qt/" name="Qt">Qt</a>
+based interface. At the end, it seems that what is going to happens is
+that DDD will have two branches, one with a GUI based in Qt and other
+based in Gtkmm, with a common core that will be independent of the GUI.
+So, it will be possible putting any other GUI based in any other
+library. As you know <a href="http://trolltech.com/company/newsroom/announcements/press.2008-01-18.5377846280" name="Qt is GPL v3">Qt is GPL v3</a> licensed. 
         <br>
         <br>
-      <LI>
-<STRONG>(2008/04/30) New maintainer found: Jose Maria Gomez Vergara.
-</STRONG>
-If you want to know a little more about the new maintainer you can have a look to his profile in Linkedin. <p>Following the DRY (Dont repeat yourself) he has put here a link to his professional profile at LinkedIn:</p>
-<p><a href="http://www.linkedin.com/in/josemariagomez"><img src="http://www.linkedin.com/img/webpromo/btn_myprofile_160x33.gif" width="160" height="33" border="0" alt="View Jose MarÃa Gomez Vergara's profile on LinkedIn"></a></p>
+      </li><li>
+<strong>(2008/04/30) New maintainer found: Jose Maria Gomez Vergara.
+</strong>
+If you want to know a little more about the new maintainer you can have a look to his profile in Linkedin. <p>Following the DRY (Dont repeat yourself) he has put here a link to his professional profile at <a href="http://www.linkedin.com/in/josemariagomez">LinkedIn</a>:</p>
 
-<LI><STRONG>(2008/03/03) Seeking a new maintainer.
-</STRONG>
+
+</li><li><strong>(2008/03/03) Seeking a new maintainer.
+</strong>
 We are officially looking for a new person to take over as maintainer of DDD.
 When I (Andrew) began doing it back in 2003, my day-job permitted me to spend a
 percentage of time on it.  That's no longer the case.  As you can see, it's
@@ -74,11 +90,11 @@ been over two years since the last release, and I'm worried that DDD is
 suffering from this lack of attention.  So if you feel you are sufficiently (a)
 dedicated and (b) qualified to take over as maintainer, please let me know.
 Two possible projects might be of interest:
-	<UL>
-	<LI>
+	<ul>
+	<li>
 	Add in functionality to display C++ standard containers (std::vector,
 	std::map, <i>et al</i>).  This is likely to require work on gdb too.
-	<LI>
+	</li><li>
 	Move the DDD codebase to a modern widget-set.  Motif is quite
 	labour-intensive, which makes it unnecessarily hard to fix bugs and add
 	new features.  The fact that it's C-based means is isn't a good fit
@@ -87,15 +103,15 @@ Two possible projects might be of interest:
 	be a great improvement to DDD.  The work involved in this transition is
 	not to be underestimated.  DDD is a rich GUI app, and there is no clean
 	separation of logic between the UI and the rest of the code.
-	</UL>
+	</li></ul>
 And of course, there's the usual stream (trickle, actually) of bug fixes to
 deal with.  I estimate that you'll need to spend about 3 hours per week on
 bug-fixing and answering queries on the mailing list.  That'll increase if you
 take on one of the challenges above (or one of your own, of course).
 
-<LI>
-<STRONG>(2005/10/16) The DDD mailing list is now for subscribers only.
-</STRONG>
+</li><li>
+<strong>(2005/10/16) The DDD mailing list is now for subscribers only.
+</strong>
 Since I took over from Andreas as the maintainer of DDD,
 I've been trying to get admin access to the mailing list
 server web interface, in order to make the list a subscriber-only
@@ -113,20 +129,20 @@ I regret that this can't be an open list any more, but
 this is the spam-strewn world in which we live.
 
 
-<LI>
-<STRONG>(2005/03/16) DDD 3.3.11 is now <A HREF="#Getting">available</A>.
-</STRONG> DDD-3.3.11 fixes a problem introduced in 3.3.10 which affected DBX
+</li><li>
+<strong>(2005/03/16) DDD 3.3.11 is now <a href="#Getting">available</a>.
+</strong> DDD-3.3.11 fixes a problem introduced in 3.3.10 which affected DBX
 users.  It also features a fix that helps when using I18N encondings.
 
-<LI>
-<STRONG>(2004/10/20) DDD 3.3.10 is now <A HREF="#Getting">available</A>.
-</STRONG> DDD-3.3.10 features many, many improvements to perl-5.8.x support.
+</li><li>
+<strong>(2004/10/20) DDD 3.3.10 is now <a href="#Getting">available</a>.
+</strong> DDD-3.3.10 features many, many improvements to perl-5.8.x support.
 It also provides fixes for Sun's SunONE Studio dbx, as well as some fixes
 for MacOS X.
 
-<LI>
-<STRONG>(2004/06/24) DDD 3.3.9 is now <A HREF="#Getting">available</A>.
-</STRONG> DDD-3.3.9 brings support for PHP; this is largely untested, so
+</li><li>
+<strong>(2004/06/24) DDD 3.3.9 is now <a href="#Getting">available</a>.
+</strong> DDD-3.3.9 brings support for PHP; this is largely untested, so
 feedback is most welcome.  Locating source files when using dbx now works
 automatically.  The perl version supported by DDD is now 5.8.x; unfortunately
 there remain a few wrinkles, but we're working on them.   The debugger settings
@@ -137,9 +153,9 @@ with G++ 3.x and with various vendor compilers.  If you've had problems
 building DDD on your platform (HPUX, Cygwin, Tru64, Solaris, Irix, AIX), then
 this is the DDD version that's for you!
 
-<LI>
-<STRONG>(2003/11/10) DDD 3.3.8 is now <A HREF="#Getting">available</A>.
-</STRONG> DDD 3.3.8 contains some important memory corruption fixes, and better
+</li><li>
+<strong>(2003/11/10) DDD 3.3.8 is now <a href="#Getting">available</a>.
+</strong> DDD 3.3.8 contains some important memory corruption fixes, and better
 interoperation with gdb-5.x, gdb-6.0, and the Perl debugger.  In addition,
 Arnaud Desitter has made literally hundreds of micro-optimisations throughout
 the codebase.  Builds on HPUX-10.20 and NetBSD are improved too.  The manual is
@@ -148,305 +164,291 @@ tarball (previously, it was a separate bundle).  DDD 3.3.8 is the fastest and
 most stable DDD yet -- I strongly recommend upgrading if you are using an
 earlier version.
 
-<LI>
-<STRONG>(2003/07/31) DDD 3.3.7 is now <A HREF="#Getting">available</A>.
-</STRONG> DDD 3.3.7 brings debugging of bash scripts (together with bashdb) and
+</li><li>
+<strong>(2003/07/31) DDD 3.3.7 is now <a href="#Getting">available</a>.
+</strong> DDD 3.3.7 brings debugging of bash scripts (together with bashdb) and
 improved conformity with ISO C++: in particular, G++-3.x is now the compiler
 recommended for DDD. G++-2.x versions will definitely not work, and will no
 longer be supported.
 
-<LI>
-<STRONG>(2003/05/15) Andreas Zeller has handed maintainership of DDD to Andrew
-Gaylard.</STRONG>
+</li><li>
+<strong>(2003/05/15) Andreas Zeller has handed maintainership of DDD to Andrew
+Gaylard.</strong>
 
-</UL>
-
-
+</li></ul>
 
 
-<H2><A NAME="About">What is DDD?</A></H2>
 
-GNU DDD is a graphical front-end for command-line debuggers such as <A
-HREF="/software/gdb/gdb.html">GDB</A>, DBX, WDB, Ladebug, JDB, XDB,
+
+<h2><a name="About">What is DDD?</a></h2>
+
+GNU DDD is a graphical front-end for command-line debuggers such as <a href="/software/gdb/gdb.html">GDB</a>, DBX, WDB, Ladebug, JDB, XDB,
 the Perl debugger, the bash debugger, or the Python debugger.  Besides
 ``usual'' front-end features such as viewing source texts, DDD has become
 famous through its interactive graphical data display, where data structures
 are displayed as graphs.
-<P>
-<A HREF="all.png"><IMG WIDTH="122" HEIGHT="127" SRC="small-all.jpg" ALT="DDD"></A>
-<A HREF="plots.png"><IMG WIDTH="121" HEIGHT="126" SRC="small-plots.jpg" ALT="Plots"></A>
+<p>
+<a href="all.png"><img src="small-all.jpg" alt="DDD" height="127" width="122"></a>
+<a href="plots.png"><img src="small-plots.jpg" alt="Plots" height="126" width="121"></a>
 
-<A HREF="settings.png"><IMG WIDTH="121" HEIGHT="127" SRC="small-settings.jpg" ALT="Debugger Settings"></A>
-<A HREF="registers.png"><IMG WIDTH="121" HEIGHT="127" SRC="small-registers.jpg" ALT="Registers"></A>
-<A HREF="signal.png"><IMG WIDTH="121" HEIGHT="127" SRC="small-signal.jpg" ALT="Signals"></A>
+<a href="settings.png"><img src="small-settings.jpg" alt="Debugger Settings" height="127" width="121"></a>
+<a href="registers.png"><img src="small-registers.jpg" alt="Registers" height="127" width="121"></a>
+<a href="signal.png"><img src="small-signal.jpg" alt="Signals" height="127" width="121"></a>
 
-<P>
+</p><p>
 For more information (and more screenshots), see the
-<A HREF="/manual/ddd/">DDD Manual</A>.
+<a href="/manual/ddd/">DDD Manual</a>.
 
 
-<H2><A NAME="Getting">Where do I get DDD source?</A></H2>
+</p><h2><a name="Getting">Where do I get DDD source?</a></h2>
 
 DDD can be found at
-<SAMP><A HREF="http://ftp.gnu.org/gnu/ddd/">/gnu/ddd/</A></SAMP> on
-<SAMP><A HREF="http://ftp.gnu.org">ftp.gnu.org</A></SAMP>.
+<samp><a href="http://ftp.gnu.org/gnu/ddd/">/gnu/ddd/</a></samp> on
+<samp><a href="http://ftp.gnu.org">ftp.gnu.org</a></samp>.
 
-DDD can also be found at
-<A HREF="http://sourceforge.net/projects/ddd/">SourceForge</A>.
+DDD<a href="http://sourceforge.net/projects/ddd/"></a>.
 
 You can also download GNU DDD from
-<A HREF="/order/ftp.html">any GNU FTP server near you</A> or
-<A HREF="/order/order.html">buy copies on CD-ROM</A> from the
-<A HREF="/fsf/fsf.html">FSF</A>.
+<a href="/order/ftp.html">any GNU FTP server near you</a> or
+<a href="/order/order.html">buy copies on CD-ROM</a> from the
+<a href="/fsf/fsf.html">FSF</a>.
 
-The <SAMP>ddd/</SAMP> directory contains the <EM>DDD source distribution:</EM>
-<DL>
-<DT> <SAMP>ddd-<VAR>version</VAR>.tar.gz</SAMP>
+The <samp>ddd/</samp> directory contains the <em>DDD source distribution:</em>
+<dl>
+<dt> <samp>ddd-<var>version</var>.tar.gz</samp>
 -- this package is the one you want.  It includes
-</DT>
-<DD>
-<UL>
-<LI> the complete DDD source code,
-<LI> building instructions, as well as
-<LI> the DDD manual in TeXinfo, Info, PostScript, and PDF formats.
-</UL>
-</DD>
-</DL>
+</dt>
+<dd>
+<ul>
+<li> the complete DDD source code,
+</li><li> building instructions, as well as
+</li><li> the DDD manual in TeXinfo, Info, PostScript, and PDF formats.
+</li></ul>
+</dd>
+</dl>
 
-<P>
-<A HREF="/software/software.html">Here</A> are further <A
-HREF="/software/software.html">instructions on how to download and
-unpack GNU packages</A>.</P>
+<p>
+<a href="/software/software.html">Here</a> are further <a href="/software/software.html">instructions on how to download and
+unpack GNU packages</a>.</p>
 
 
-<H2><A NAME="Binaries">Where do I get DDD binaries?</A></H2>
+<h2><a name="Binaries">Where do I get DDD binaries?</a></h2>
 
-The FSF does not distribute DDD binaries.  You can <A
-HREF="http://www.gnu.org/help/gethelp.html">ask for help</A> if you
+The FSF does not distribute DDD binaries.  You can <a href="http://www.gnu.org/help/gethelp.html">ask for help</a> if you
 need technical support.
-<P>
-DDD binaries for <A
-HREF="http://www.gnu.org/gnu/linux-and-gnu.html">GNU/Linux</A> are
+<p>
+DDD binaries for <a href="http://www.gnu.org/gnu/linux-and-gnu.html">GNU/Linux</a> are
 typically available via your GNU/Linux distributor:
-<UL>
-<LI>DDD packages for Debian GNU/Linux are found 
-<A HREF="http://www.debian.org/Packages/unstable/devel/ddd.html">here</A>.
-<LI>
+</p><ul>
+<li>DDD packages for Debian GNU/Linux are found 
+<a href="http://www.debian.org/Packages/unstable/devel/ddd.html">here</a>.
+</li><li>
 DDD RPMs can be found in
-<A HREF="http://rpmfind.net/linux/rpm2html/search.php?query=ddd">http://rpmfind.net/linux/rpm2html/search.php?query=ddd</A>.
-</UL>
-<P>
-<A HREF="http://www.thewrittenword.com/">The written word</A> provides
-binaries of freely available software for various platforms.  Their <A
-HREF="ftp://ftp.thewrittenword.com/packages/by-name/">FTP
-server</A> contains DDD and XPM packages.
+<a href="http://rpmfind.net/linux/rpm2html/search.php?query=ddd">http://rpmfind.net/linux/rpm2html/search.php?query=ddd</a>.
+</li></ul>
+<p>
+<a href="http://www.thewrittenword.com/">The written word</a> provides
+binaries of freely available software for various platforms.  Their <a href="ftp://ftp.thewrittenword.com/packages/by-name/">FTP
+server</a> contains DDD and XPM packages.
 
-<H2><A NAME="Building">What do I need to build DDD?</A></H2>
+</p><h2><a name="Building">What do I need to build DDD?</a></h2>
 
 To build DDD from sources, you need 
-<UL>
-<LI> The <A HREF="#Getting">DDD source distribution</A> (see above).
+<ul>
+<li> The <a href="#Getting">DDD source distribution</a> (see above).
 
-<LI> The <A HREF="/software/gcc/gcc.html">GNU compiler collection
-(GCC)</A>, version 3.0 or higher (or another ISO C++ compiler).
+</li><li> The <a href="/software/gcc/gcc.html">GNU compiler collection
+(GCC)</a>, version 3.0 or higher (or another ISO C++ compiler).
 
-<LI> The <A HREF="http://www.lesstif.org/">LessTif</A> user interface
+</li><li> The <a href="http://www.lesstif.org/">LessTif</a> user interface
 toolkit, version 0.89 or higher (or another Motif-compatible user
 interface toolkit).
-</UL>
+</li></ul>
 
 The simplest way to build DDD is:
-<OL>
-<LI> Unpack the DDD source distribution
-<LI> Change into the <SAMP>ddd-<VAR>version</VAR></SAMP> subdirectory
-<LI> Type <SAMP>./configure; make</SAMP>
-</OL>
+<ol>
+<li> Unpack the DDD source distribution
+</li><li> Change into the <samp>ddd-<var>version</var></samp> subdirectory
+</li><li> Type <samp>./configure; make</samp>
+</li></ol>
 
-To run DDD, you need <A HREF="/software/gdb/gdb.html">the GNU debugger
-(GDB)</A>, version 4.16 or later (or another command-line debugger
+To run DDD, you need <a href="/software/gdb/gdb.html">the GNU debugger
+(GDB)</a>, version 4.16 or later (or another command-line debugger
 such as DBX, WDB, Ladebug, JDB, XDB, the Perl debugger, or the Python
 debugger).
 
 
 
-<H2><A NAME="Doc">How do I get started with DDD?</A></H2>
+<h2><a name="Doc">How do I get started with DDD?</a></h2>
 
-The <A HREF="/manual/ddd/">DDD Manual</A> contains a detailed tutorial.
+The <a href="/manual/ddd/">DDD Manual</a> contains a detailed tutorial.
 
-<P>
+<p>
 Here are some free third-party tutorials on the Web:
-<UL>
-<LI>
-There's an <A
-HREF="http://www.ddj.com/articles/2001/0103/">article</A>
-on DDD in <A HREF="http://www.ddj.com/">Dr. Dobb's Journal</A>.
-<LI> The book 
-<EM><A HREF="http://www.dpunkt.de/buecher/3-932588-70-3.html">Programmierwerkzeuge</A></EM>
+</p><ul>
+<li>
+There's an <a href="http://www.ddj.com/articles/2001/0103/">article</a>
+on DDD in <a href="http://www.ddj.com/">Dr. Dobb's Journal</a>.
+</li><li> The book 
+<em><a href="http://www.dpunkt.de/buecher/3-932588-70-3.html">Programmierwerkzeuge</a></em>
 has a detailed chapter on debugging with GDB and DDD (in German; select "Kapitel 11").
-<LI> <EM><A HREF="http://www.linuxfocus.org/">LinuxFocus</A></EM> has a DDD tutorial 
-in <A HREF="http://www.linuxfocus.org/English/January1998/article20.html">English</A>,
-<A HREF="http://www.linuxfocus.org/Castellano/January1998/article20.html">Spanish</A>,
-<A HREF="http://www.linuxfocus.org/Deutsch/January1998/article20.html">German</A>,
-<A HREF="http://www.linuxfocus.org/Francais/January1998/article20.html">French</A>,
-<A HREF="http://www.linuxfocus.org/Korean/January1998/article20.html">Korean</A>,
+</li><li> <em><a href="http://www.linuxfocus.org/">LinuxFocus</a></em> has a DDD tutorial 
+in <a href="http://www.linuxfocus.org/English/January1998/article20.html">English</a>,
+<a href="http://www.linuxfocus.org/Castellano/January1998/article20.html">Spanish</a>,
+<a href="http://www.linuxfocus.org/Deutsch/January1998/article20.html">German</a>,
+<a href="http://www.linuxfocus.org/Francais/January1998/article20.html">French</a>,
+<a href="http://www.linuxfocus.org/Korean/January1998/article20.html">Korean</a>,
 and
-<A HREF="http://www.linuxfocus.org/Turkce/January1998/article20.html">Turkish</A>.
-<LI> <EM><A HREF="http://www.linux-magazin.de/">Linux-Magazin</A></EM> has another
-<A HREF="http://www.linux-magazin.de/Artikel/ausgabe/1996/12/DDD/ddd.html">DDD tutorial</A> (in German).
-</UL>
+<a href="http://www.linuxfocus.org/Turkce/January1998/article20.html">Turkish</a>.
+</li><li> <em><a href="http://www.linux-magazin.de/">Linux-Magazin</a></em> has another
+<a href="http://www.linux-magazin.de/Artikel/ausgabe/1996/12/DDD/ddd.html">DDD tutorial</a> (in German).
+</li></ul>
 
 
-<H2><A NAME="Alpha">Where do I get DDD alpha releases?</A></H2>
+<h2><a name="Alpha">Where do I get DDD alpha releases?</a></h2>
 
 Recent (not necessarily tested) snapshots of GNU DDD can be
-found at <SAMP><A
-HREF="http://sourceforge.net/projects/ddd/">http://sourceforge.net/projects/ddd/</A></SAMP>.
-<P>
+found at <samp><a href="http://sourceforge.net/projects/ddd/">http://sourceforge.net/projects/ddd/</a></samp>.
+<p>
 The DDD CVS repository (containing all versions of DDD, including the
 very latest changes) is available via
-<SAMP><A HREF="http://sourceforge.net/projects/ddd/">http://sourceforge.net/projects/ddd/</A></SAMP>.
+<samp><a href="http://sourceforge.net/projects/ddd/">http://sourceforge.net/projects/ddd/</a></samp>.
 
 
 
-<H2><A NAME="Bugs">I have found a bug!  How do I report it?</A></H2>
+</p><h2><a name="Bugs">I have found a bug!  How do I report it?</a></h2>
 
-You can report bugs to <SAMP><A
-HREF="mailto:bug-ddd at gnu.org">bug-ddd at gnu.org</A></SAMP>.  Before you
+You can report bugs to <samp><a href="mailto:bug-ddd%20at%20gnu.org">bug-ddd at gnu.org</a></samp>.  Before you
 do this, please check the following:
-<UL>
-<LI> Please read the section ``Bugs and How to Report Them'' toward
-the end of the <A HREF="/manual/ddd/">DDD Manual</A>.
+<ul>
+<li> Please read the section ``Bugs and How to Report Them'' toward
+the end of the <a href="/manual/ddd/">DDD Manual</a>.
 
-<LI> Be sure to include a copy of your <SAMP>~/.ddd/log</SAMP> file
+</li><li> Be sure to include a copy of your <samp>~/.ddd/log</samp> file
 which tells your DDD configuration as well as the interaction between
 DDD and the underlying command-line debugger.
-</UL>
+</li></ul>
 
-<P>
+<p>
 The purpose of reporting a bug is to enable the bug to be fixed for
 the sake of the whole community of users. You may or may not receive a
 response; the maintainers will send one if that helps them find or
 verify a fix. Most GNU maintainers are volunteers and all are
 overworked; they don't have time to help individuals and still fix the
 bugs and make the improvements that everyone wants. If you want help
-for yourself in particular, you may have to <A
-HREF="/help/gethelp.html">hire someone for technical support</A>.  
+for yourself in particular, you may have to <a href="/help/gethelp.html">hire someone for technical support</a>.  
 
-<P>
+</p><p>
 
 If you are willing to help fixing DDD bugs, you can 
-<A HREF="http://mail.gnu.org/mailman/listinfo/bug-ddd/">subscribe
-to the bug-ddd mailing list or access its archives</A>.
+<a href="http://mail.gnu.org/mailman/listinfo/bug-ddd/">subscribe
+to the bug-ddd mailing list or access its archives</a>.
 
 
 
-<H2><A NAME="Assistance">I have a question regarding DDD.  Where do I get assistance?</A></H2>
+</p><h2><a name="Assistance">I have a question regarding DDD.  Where do I get assistance?</a></h2>
 
 We have a general-purpose mailing list devoted to DDD.  You can ask
-any questions to <SAMP><A
-HREF="mailto:ddd at gnu.org">ddd at gnu.org</A></SAMP>.  Patches and new
-releases are also announced here.  <A
-HREF="http://mail.gnu.org/mailman/listinfo/ddd">Subscription info and
-mailing list archives</A> are available.  Owing to abuse by spammers,
+any questions to <samp><a href="mailto:ddd%20at%20gnu.org">ddd at gnu.org</a></samp>.  Patches and new
+releases are also announced here.  <a href="http://mail.gnu.org/mailman/listinfo/ddd">Subscription info and
+mailing list archives</a> are available.  Owing to abuse by spammers,
 it is necessary to subscribe before posting to the list.
 
 
-<P>
-If you need technical support on DDD, you can <A
-HREF="http://www.gnu.org/help/gethelp.html">ask for technical support</A>.
+<p>
+If you need technical support on DDD, you can <a href="http://www.gnu.org/help/gethelp.html">ask for technical support</a>.
 
 
-<H2><A NAME="References">Where can I learn more about debugging and debuggers?</A></H2>
+</p><h2><a name="References">Where can I learn more about debugging and debuggers?</a></h2>
 
 Here's a couple of related resources:
 
-<UL>
+<ul>
 
-<LI> <CITE><A HREF="/software/gdb/gdb.html">GDB Home Page</A></CITE>.
-<SMALL>Includes latest patches and development snapshots.</SMALL>
-<LI> <CITE><A HREF="http://www.lesstif.org/">LessTif</A></CITE>.
-<SMALL>The free Motif clone.</SMALL>
-<LI> <CITE><A HREF="http://libre.act-europe.fr/gvd/">GVD</A></CITE>.
-<SMALL>The GNU Visual Debugger.</SMALL>
-<LI> <CITE><A HREF="http://www.hp.com/go/wdb">HP Wildebeest (WDB)</A></CITE>.
-<SMALL>A port of GDB to PA-RISC/HP-UX, by HP.</SMALL>
-<LI> <CITE><A HREF="http://sources.redhat.com/insight/">Insight</A></CITE>.
-<SMALL>A very nice GUI for GDB from
-<A HREF="http://www.redhat.com/">Redhat</A>, the GDB maintainers.</SMALL>
-<LI> <CITE><A HREF="http://www.kdbg.org">KDbg</A></CITE>.
-<SMALL>A KDE-based GDB Interface with inspection of variable values in a tree structure.</SMALL>
-<LI> <CITE><A HREF="http://www.ee.ryerson.ca:8080/~elf/xapps/Q-IV.html">xxgdb</A></CITE>.
-<SMALL>The oldest and simplest X interface for GDB and DBX.</SMALL>
-<LI> <CITE><A HREF="http://www.ee.ryerson.ca:8080/~elf/xapps/Q-IV.html">tgdb</A></CITE>.
-<SMALL>A Tcl/Tk GDB interface (similar to <EM>Turbo Debugger</EM> or
-<EM>CodeView</EM>).</SMALL>
-<LI> <CITE><A HREF="http://www.cs.princeton.edu/~jlk/deet/">deet</A></CITE>.
-<SMALL>A simple and extensible graphical debugger.</SMALL>
-<LI> <CITE><A HREF="http://www.perl.com/cs/user/query/q/6?id_topic=40">A list of available Perl debuggers</A></CITE>.
-<SMALL>The ultimate Perl reference.</SMALL>
-<LI> <CITE><A HREF="http://members.tripod.com/~CurtMcKelvey/perldbgui/">A GUI for the Perl Debugger</A></CITE>.
-<SMALL>Written in Perl.</SMALL>
-<LI> <CITE><A HREF="/software/nana/nana.html">GNU Nana</A></CITE>.
-<SMALL>Improved support for assertions and logging in C and C++.</SMALL>
-<LI> <CITE><A HREF="/software/checker/checker.html">GNU Checker</A></CITE>.
-<SMALL>A tool to find memory errors at runtime</SMALL>
-<LI> <CITE><A HREF="http://www.ee.ryerson.ca:8080/~elf/xapps/Q-IV.html">xwpe</A></CITE>.
-<SMALL>A programming environment integrating a program editor with an external debugger.</SMALL>
-<LI> <CITE><A HREF="http://www.valgrind.org/">Valgrind</A></CITE>.
-<SMALL>No-one developing C or C++ code under Linux/x86 or Linux/PPC should be without it.</SMALL>
-</UL>
+<li> <cite><a href="/software/gdb/gdb.html">GDB Home Page</a></cite>.
+<small>Includes latest patches and development snapshots.</small>
+</li><li> <cite><a href="http://www.lesstif.org/">LessTif</a></cite>.
+<small>The free Motif clone.</small>
+</li><li> <cite><a href="http://libre.act-europe.fr/gvd/">GVD</a></cite>.
+<small>The GNU Visual Debugger.</small>
+</li><li> <cite><a href="http://www.hp.com/go/wdb">HP Wildebeest (WDB)</a></cite>.
+<small>A port of GDB to PA-RISC/HP-UX, by HP.</small>
+</li><li> <cite><a href="http://sources.redhat.com/insight/">Insight</a></cite>.
+<small>A very nice GUI for GDB from
+<a href="http://www.redhat.com/">Redhat</a>, the GDB maintainers.</small>
+</li><li> <cite><a href="http://www.kdbg.org">KDbg</a></cite>.
+<small>A KDE-based GDB Interface with inspection of variable values in a tree structure.</small>
+</li><li> <cite><a href="http://www.ee.ryerson.ca:8080/%7Eelf/xapps/Q-IV.html">xxgdb</a></cite>.
+<small>The oldest and simplest X interface for GDB and DBX.</small>
+</li><li> <cite><a href="http://www.ee.ryerson.ca:8080/%7Eelf/xapps/Q-IV.html">tgdb</a></cite>.
+<small>A Tcl/Tk GDB interface (similar to <em>Turbo Debugger</em> or
+<em>CodeView</em>).</small>
+</li><li> <cite><a href="http://www.cs.princeton.edu/%7Ejlk/deet/">deet</a></cite>.
+<small>A simple and extensible graphical debugger.</small>
+</li><li> <cite><a href="http://www.perl.com/cs/user/query/q/6?id_topic=40">A list of available Perl debuggers</a></cite>.
+<small>The ultimate Perl reference.</small>
+</li><li> <cite><a href="http://members.tripod.com/%7ECurtMcKelvey/perldbgui/">A GUI for the Perl Debugger</a></cite>.
+<small>Written in Perl.</small>
+</li><li> <cite><a href="/software/nana/nana.html">GNU Nana</a></cite>.
+<small>Improved support for assertions and logging in C and C++.</small>
+</li><li> <cite><a href="/software/checker/checker.html">GNU Checker</a></cite>.
+<small>A tool to find memory errors at runtime</small>
+</li><li> <cite><a href="http://www.ee.ryerson.ca:8080/%7Eelf/xapps/Q-IV.html">xwpe</a></cite>.
+<small>A programming environment integrating a program editor with an external debugger.</small>
+</li><li> <cite><a href="http://www.valgrind.org/">Valgrind</a></cite>.
+<small>No-one developing C or C++ code under Linux/x86 or Linux/PPC should be without it.</small>
+</li></ul>
 
 Have fun with DDD!
-<P>
+<p>
 <br>
 <b>Current Maintainer:</b>
 <br>
 
-<A HREF="http://www.gnu.org/software/ddd">Jose Mar&iacute;a G&oacute;mez Vergara</A>
-&lt;<A HREF="mailto:josemaria at jmgv dot org">josemaria at jmgv dot org</A>&gt;
+<a href="http://www.gnu.org/software/ddd">Jose Mar&#237;a G&#243;mez Vergara</a>
+&lt;<a href="mailto:josemaria%20at%20jmgv%20dot%20org">josemaria at jmgv dot org</a>&gt;
 
-<P>
+</p><p>
 <br>
 <b>Former Maintainers:</b>
 <br>
 
-<A HREF="http://www.st.cs.uni-sb.de/~zeller/">Andreas Zeller</A>
-&lt;<A HREF="mailto:zeller at gnu.org">zeller at gnu.org</A>&gt;
+<a href="http://www.st.cs.uni-sb.de/%7Ezeller/">Andreas Zeller</a>
+&lt;<a href="mailto:zeller%20at%20gnu.org">zeller at gnu.org</a>&gt;
 
-<P>
+</p><p>
 
 Andrew Gaylard &lt;apg at users dot sf dot net&gt;
 
 <!-- beginning of final boilerplate -->
 
-<HR>
+</p><hr>
 
-Return to <A HREF="/home.html">GNU's home page</A>.
+Return to <a href="/home.html">GNU's home page</a>.
 
-<P>
+<p>
 Please send FSF &amp; GNU inquiries &amp; questions to
 
-<A HREF="mailto:gnu at gnu.org"><EM>gnu at gnu.org</EM></A>.
-There are also <A HREF="http://www.fsf.org/about/contact.html">other ways to contact</A> the FSF.
+<a href="mailto:gnu%20at%20gnu.org"><em>gnu at gnu.org</em></a>.
+There are also <a href="http://www.fsf.org/about/contact.html">other ways to contact</a> the FSF.
 
-<P>
+</p><p>
 Please send comments on these web pages to
-<A HREF="mailto:webmasters at www.gnu.org"><EM>webmasters at www.gnu.org</EM></A>,
+<a href="mailto:webmasters%20at%20www.gnu.org"><em>webmasters at www.gnu.org</em></a>,
 send other questions to
-<A HREF="mailto:gnu at gnu.org"><EM>gnu at gnu.org</EM></A>.
+<a href="mailto:gnu%20at%20gnu.org"><em>gnu at gnu.org</em></a>.
 
-<P>
-Copyright &copy; 2000-2006 Free Software Foundation, Inc.,
+</p><p>
+Copyright &#169; 2000-2006 Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301,  USA
 
-<P>
+</p><p>
 Verbatim copying and distribution of this entire article is
 permitted in any medium, provided this notice is preserved.
-<P>
+</p><p>
 Updated:
 <!-- timestamp start -->
-$Date: 2008/05/06 21:16:31 $ $Author: jmgv $
+$Date: 2008/06/10 21:01:45 $ $Author: jmgv $
 <!-- timestamp end -->
-<HR>
-</BODY>
-</HTML>
+</p><hr>
+</body></html>
