@@ -1,12 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head>
 
-<title>DDD - Data Display Debugger - GNU Project - Free Software Foundation (FSF)</title><link rel="author" href="mailto:zeller%20at%20gnu.org">
+<title>DDD - Data Display Debugger - GNU Project - Free Software Foundation (FSF)</title><link rel="author" href="mailto:ddd%20at%20gnu.org">
 <link rel="StyleSheet" href="style.css" type="text/css" media="screen">
 
 <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
 <meta name="keywords" content="debugger debugging visualization GDB">
 <meta name="keywords" content="DDD"><style type="text/css">
+
  body {
   background-color: #FFFFFF;
   color: #000000;
@@ -55,7 +56,7 @@
 
 <ul>
 <li><strong>(2008/10/22) DDD has a bug tracker on Savannah.</strong>
-The <a href="http://savannah.gnu.org/bugs/?group=ddd" name="DDD Bug Tracker">bug tracker</a>
+The <a href="http://savannah.gnu.org/bugs/?group=ddd">bug tracker</a>
 is the best way to report bugs (use "Bugs" on the toolbar, and "Submit").
 You are encouraged to login, but you can post bug anonymously if you want.
 Posting directly to the <tt>bug-ddd</tt> mailing list is now deprecated, since the tracker
@@ -65,19 +66,18 @@ instructions for <a href="#Bugs">bug reporting</a>.
 <li><strong>(2008/10/19) Jose Maria Gomez Vergara has handed
 maintainership of DDD to Peter Wainwright.
 </strong></li>
-<li><span style="font-weight: bold;">(2008/06/10) Lastest changes. </span>To avoid problems in the future I have put everything together. What does it means.&nbsp;</li><ul><li>From
-now on, it doesnt exists several repositories. All information about
-DDD is in this page and in savannah site. There is not other repository
-in all around de world. If you find a repository in SourceForge, ignore
-it because it isnt going to be upgrade any longer. At least not in the
-official version. Since we have been using CVS and SVN for source, I
-have put everything in SVN module. However, web repository is still in
-CVS. So, source in SVN and Web in CVS. For more details to how access
-it please visit savannah web page for intructions.&nbsp;</li><li>To
+<li><strong>(2008/06/10) CVS to Subversion conversion and move to
+Savannah site.</strong> DDD is now completely on the GNU Savannah
+site; the older SourceForge site is deprecated. Furthermore version
+control of the source code is now handled via Subversion, although Web pages
+like this one are maintained in CVS. For more details to how access it
+please visit savannah web page for instructions.&nbsp;</li><li>To
 report bugs you should use the bug track system in savannah as well.
 All other emails to the generic distribution list with errors will be
 ignored. Please, subscribe to DDD distribution list in order to be up
-to date with all about this project.&nbsp;</li><li>This web page will change in some days to make it more clear and useful.</li></ul></ul><ul><li><strong>(2008/05/06) New plans for DDD.
+to date with all about this project.&nbsp;</li><li>This web page will
+change in some days to make it more clear and
+useful.</li></ul><ul><li><strong>(2008/05/06) New plans for DDD.
 </strong>The new maintainer has communicated to the official DDD distribution list about the intention of change the GUI to a <a href="http://trolltech.com/products/" name="Qt">Qt</a>
 based interface. At the end, it seems that what is going to happens is
 that DDD will have two branches, one with a GUI based in Qt and other
@@ -89,7 +89,7 @@ library. As you know <a href="http://trolltech.com/products/appdev/licensing/lic
       </li><li>
 <strong>(2008/04/30) New maintainer found: Jose Maria Gomez Vergara.
 </strong>
-If you want to know a little more about the new maintainer you can have a look to his profile in Linkedin. <p>Following the DRY (Dont repeat yourself) he has put here a link to his professional profile at <a href="http://www.linkedin.com/in/josemariagomez">LinkedIn</a>:</p>
+If you want to know a little more about the new maintainer you can have a look to his profile in Linkedin. <p>Following the DRY (Don't repeat yourself) he has put here a link to his professional profile at <a href="http://www.linkedin.com/in/josemariagomez">LinkedIn</a>:</p>
 
 
 </li><li><strong>(2008/03/03) Seeking a new maintainer.
@@ -193,11 +193,15 @@ Gaylard.</strong>
 
 <h2><a name="About">What is DDD?</a></h2>
 
-GNU DDD is a graphical front-end for command-line debuggers such as <a href="/software/gdb/gdb.html">GDB</a>, DBX, WDB, Ladebug, JDB, XDB,
-the Perl debugger, the bash debugger, or the Python debugger.  Besides
-``usual'' front-end features such as viewing source texts, DDD has become
-famous through its interactive graphical data display, where data structures
-are displayed as graphs.
+GNU DDD is a graphical front-end for command-line debuggers such
+as <a href="/software/gdb/gdb.html">GDB</a>, <a href="http://en.wikipedia.org/wiki/Dbx_debugger">DBX</a>, WDB, <a href="http://www.tru64unix.compaq.com/docs/base_doc/DOCUMENTATION/V51A_HTML/LADEBUG/TITLE.HTM">Ladebug</a>, JDB,
+XDB, <a href="http://debugger.perl.org/">the Perl debugger</a>, the bash
+debugger <a href="http://bashdb.sf.net">bashdb</a>, the GNU Make
+debugger <a href="http://bashdb.sf.net/remake">remake</a>, or the
+Python debugger <a href="http://bashdb.sf.net/pydb">pydb</a>.  Besides
+``usual'' front-end features such as viewing source texts, DDD has
+become famous through its interactive graphical data display, where
+data structures are displayed as graphs.
 <p>
 <a href="all.png"><img src="small-all.jpg" alt="DDD" height="127" width="122"></a>
 <a href="plots.png"><img src="small-plots.jpg" alt="Plots" height="126" width="121"></a>
@@ -280,10 +284,13 @@ The simplest way to build DDD is:
 </li></ol>
 
 To run DDD, you need <a href="/software/gdb/gdb.html">the GNU debugger
-(GDB)</a>, version 4.16 or later (or another command-line debugger
-such as DBX, WDB, Ladebug, JDB, XDB, the Perl debugger, or the Python
-debugger).
-
+(GDB)</a>, version 4.16 or later (or depending on the program to be
+debugged, possibly other command-line debuggers such
+as <a href="http://www.tru64unix.compaq.com/docs/base_doc/DOCUMENTATION/V51A_HTML/LADEBUG/TITLE.HTM">Ladebug</a>,
+JDB, XDB, <a href="http://debugger.perl.org/">the Perl debugger</a>,
+the bash debugger <a href="http://bashdb.sf.net">bashdb</a>, the GNU
+Make debugger <a href="http://bashdb.sf.net/remake">remake</a>, or the
+Python debugger <a href="http://bashdb.sf.net/pydb">pydb</a>.)
 
 
 <h2><a name="Doc">How do I get started with DDD?</a></h2>
@@ -315,15 +322,14 @@ very latest changes) is available via
 <samp><a href="http://savannah.gnu.org/projects/ddd">http://savannah.gnu.org/projects/ddd</a></samp>.
 
 
-
-</p><h2><a name="Bugs">I have found a bug!  How do I report it?</a></h2>
+<h2><a name="Bugs">I have found a bug!  How do I report it?</a></h2>
 
 You can report bugs on the <a href="http://savannah.gnu.org/bugs/?group=ddd" name="DDD Bug Tracker">bug tracker</a>.
 Before you do this, please check the following:
 <ul>
 <li>Please try to see whether your bug has already been reported. You can
 <a href="http://savannah.gnu.org/bugs/?group=ddd">browse</a> or
-<a href="http://savannah.gnu.org/bugs/?func=search&group=ddd">search</a>
+<a href="http://savannah.gnu.org/bugs/?func=search&amp;group=ddd">search</a>
 the bug tracker.
 </li>
 <li>Please read the section ``Bugs and How to Report Them'' toward
@@ -368,17 +374,33 @@ it is necessary to subscribe before posting to the list.
 If you need technical support on DDD, you can <a href="http://www.gnu.org/help/gethelp.html">ask for technical support</a>.
 
 
-</p><h2><a name="References">Where can I learn more about debugging and debuggers?</a></h2>
+</p><h2><a name="Inferior Debugger References">Where can I learn more about the debuggers DDD uses?</a></h2>
 
-Here's a couple of related resources:
+As mentioned <a href="#About">above</a>, DDD runs a number of debuggers
+under the scenes.  One can issue commands directly to those
+debuggers. Below are links for these debuggers:
 
 <ul>
+<li>GNU Debugger: <a href="/software/gdb/gdb.html"><tt>gdb</tt></a>
+</li><li>Perl Debugger: <a href="http://debugger.perl.org/"><tt>perl -d</tt></a>
+<li>Bash Debugger: <a href="http://bashdb.sf.net"><tt>bashdb</tt></a>
+<li>Python Debugger: <a href="http://bashdb.sf.net/pydb"><tt>pydb</tt></a>
+<li>GNU Make Debugger: <a href="http://bashdb.sf.net/make"><tt>remake</tt></a>
+<li>dbx: <a href="http://en.wikipedia.org/wiki/Dbx_debugger">dbx</a></li>
+<li>Ladebug: <a href="http://www.tru64unix.compaq.com/docs/base_doc/DOCUMENTATION/V51A_HTML/LADEBUG/TITLE.HTM"><tt>ladebug</tt></a></li>
+</ul>
 
-<li> <cite><a href="/software/gdb/gdb.html">GDB Home Page</a></cite>.
-<small>Includes latest patches and development snapshots.</small>
-</li><li> <cite><a href="http://www.lesstif.org/">LessTif</a></cite>.
-<small>The free Motif clone.</small>
-</li><li> <cite><a href="http://libre.act-europe.fr/gvd/">GVD</a></cite>.
+<p><em>(To do: expand the above for more references on each debugger,
+e.g, tutorials, books, video demos.)</em></p>
+
+<h2><a name="References">Where can I learn more about debugging and debuggers?</a></h2>
+
+Here are some other related resources:
+
+<ul>
+<li> <cite><a href="http://www.lesstif.org/">LessTif</a> or <a href="http://en.wikipedia.org/wiki/Open_Motif/">Open Motif</a></cite>.
+<small>A window library needed to compile DDD.</small>
+<li> <cite></cite>.
 <small>The GNU Visual Debugger.</small>
 </li><li> <cite><a href="http://www.hp.com/go/wdb">HP Wildebeest (WDB)</a></cite>.
 <small>A port of GDB to PA-RISC/HP-UX, by HP.</small>
@@ -443,7 +465,7 @@ send other questions to
 <a href="mailto:gnu%20at%20gnu.org"><em>gnu at gnu.org</em></a>.
 
 </p><p>
-Copyright &#169; 2000-2006 Free Software Foundation, Inc.,
+Copyright &#169; 2000-2008 Free Software Foundation, Inc.,
 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301,  USA
 
 </p><p>
@@ -452,7 +474,12 @@ permitted in any medium, provided this notice is preserved.
 </p><p>
 Updated:
 <!-- timestamp start -->
-$Date: 2008/10/22 20:06:03 $ $Author: pwainwright $
+$Date: 2008/10/23 07:34:48 $ $Author: rocky $
 <!-- timestamp end -->
 </p><hr>
+<p>
+  <a href="http://validator.w3.org/check?uri=referer"><img
+        src="http://www.w3.org/Icons/valid-html401-blue"
+        alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+  </p>
 </body></html>
